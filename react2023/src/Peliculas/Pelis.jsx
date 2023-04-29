@@ -12,7 +12,7 @@ export const Pelis = () => {
     <div>
       <h1>Peliculas</h1>
       {peliculas.map((peli) => {
-        return <Card key={peli.id} pelicula={peli.nombre} fecha={peli.fecha} imagen={peli.link_portada} />;
+        return <Card key={peli.id} pelicula={peli} />;
         })}
     </div>
   )
