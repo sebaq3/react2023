@@ -1,0 +1,40 @@
+{
+    "series": [
+        {
+            "id": "1",
+            "name": "Breaking Bad",
+            "genre": "Crime drama",
+            "synopsis": "Breaking Bad is an American neo-Western crime drama television series created and produced by Vince Gilligan. The show aired on AMC from January 20, 2008, to September 29, 2013, consisting of five seasons for a total of 62 episodes. The series tells the story of Walter White, a high school chemistry teacher diagnosed with lung cancer, who turns to manufacturing and selling methamphetamine to secure his family's financial future."
+        },
+        {
+            "id": "2",
+            "name": "Game of Thrones",
+            "genre": "Fantasy",
+            "synopsis": "Game of Thrones is a fantasy drama television series created by David Benioff and D. B. Weiss. It is an adaptation of A Song of Ice and Fire, George R. R. Martin's series of fantasy novels, the first of which is A Game of Thrones. The show premiered on HBO in the United States on April 17, 2011, and its eighth and final season concluded on May 19, 2019."
+        },
+        {
+            "id": "3",
+            "name": "Friends",
+            "genre": "Sitcom",
+            "synopsis": "Friends is an American television sitcom created by David Crane and Marta Kauffman. The show aired on NBC from September 22, 1994, to May 6, 2004, for a total of ten seasons. The series follows six friends in their 20s and 30s who live in Manhattan, New York City, as they navigate the ups and downs of life, love, and career."
+        },
+        {
+            "id": "4",
+            "name": "The Office",
+            "genre": "Mockumentary sitcom",
+            "synopsis": "The Office is an American mockumentary sitcom television series that depicts the everyday lives of office employees in the Scranton, Pennsylvania, branch of the fictional Dunder Mifflin Paper Company. The show premiered on NBC on March 24, 2005, and ran for nine seasons until its finale on May 16, 2013."
+        },
+        {
+            "id": "5",
+            "name": "Stranger Things",
+            "genre": "Science fiction horror",
+            "synopsis": "Stranger Things is an American science fiction horror streaming television series created by the Duffer Brothers and released on Netflix. The show is set in the 1980s in the fictional town of Hawkins, Indiana, and focuses on the investigation into the disappearance of a young boy amid supernatural events occurring around the town, including the appearance of a girl with psychokinetic abilities who helps the missing boy's friends in their search."
+        },
+        {
+            "id": "6",
+            "name": "The Crown",
+            "genre": "Historical drama",
+            "synopsis": "The Crown is a historical drama streaming television series created by Peter Morgan for Netflix. The show tells the story of the reign of Queen Elizabeth II of the United Kingdom, from her wedding in 1947 to the present day. The series premiered on November 4, 2016, and has been praised for its historical accuracy, production values, and acting performances."
+        }
+    ]
+  }
