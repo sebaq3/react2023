@@ -1,9 +1,10 @@
 import React, { useState }  from 'react';
 import json from '../assets/noticias.json';
+import Card from './Card';
 
 
 
-const Noticias = () => {
+ export const Noticias = () => {
 
 const [noticias, setNoticia] = useState(json.noticias);
 
@@ -11,18 +12,20 @@ const [noticias, setNoticia] = useState(json.noticias);
     <div>
       <h1>Noticias</h1>
       {noticias.map((noticia) => {
-        return(
-            <div>
-                 <p>{ noticia.id}</p>
-                 <p>{ noticia.title}</p>
-                 <p>{ noticia.description}</p>
-                 <p>{ noticia.date}</p>
-            </div>
-        );
-       
+        return<Card key={ noticia.id } noticia={noticia} />;
         })}
-    </div>
-  )
-}
+      </div>
+      );
+    };
 
-export default Noticias;
+
+
+
+            
+     
+
+
+
+
+
+
