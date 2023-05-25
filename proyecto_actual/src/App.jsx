@@ -10,6 +10,7 @@ const App = () => {
   return (
     <>
       <div>
+        
       <Serie></Serie>
       <Noticias></Noticias>      
       <Pelis></Pelis> 

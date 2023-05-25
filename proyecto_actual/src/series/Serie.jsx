@@ -1,6 +1,7 @@
 import React, {useId, useState} from 'react';
 import Card from './Card';
 import json from '../assets/series.json'
+import GeneralLayout from "../layouts/GeneralLayout";
 
 const Serie = () => {
   const id = useId();
@@ -10,6 +11,7 @@ const Serie = () => {
   return (
 
     <div>
+      <GeneralLayout></GeneralLayout> 
       <h1>Series</h1>
 
     {series.map((serie)=>{

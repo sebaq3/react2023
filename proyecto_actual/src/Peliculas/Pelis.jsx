@@ -1,6 +1,7 @@
 import React , { useState } from "react";
 import json from "../assets/peliculas.json";
 import Card from "./Card";
+import GeneralLayout from "../layouts/GeneralLayout";
 
 export const Pelis = () => {
   
@@ -10,6 +11,7 @@ export const Pelis = () => {
   
   return (
     <div>
+      <GeneralLayout></GeneralLayout>
       <h1>Peliculas</h1>
       {peliculas.map((peli) => {
         return <Card key={peli.id} pelicula={peli} />;
