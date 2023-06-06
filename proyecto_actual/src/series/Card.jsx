@@ -9,14 +9,17 @@ const styleCard = {
   width: '300px',
 };
 
-const Card = ({serie}) => {
+const Card = ({ serie, genres }) => {
+  const { name, overview, genre_ids } = serie;
+  const showGenres = genre_ids.map((genreId) => genres[genreId]);
+
   return (
-    <div style={styleCard}>
-      <h1>{serie.name}</h1>
-      <h1>{serie.genre}</h1>
-      <h2>{serie.synopsis}</h2>
+    <div>
+      <h2>{name}</h2>
+      <p>{overview}</p>
+      <p>Genres: {showGenres.join(', ')}</p>
     </div>
-  )
-}
+  );
+};
 
 export default Card;
