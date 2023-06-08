@@ -10,19 +10,21 @@ const styleCard = {
   
 };
 
-const Card = ({ pelicula }) => {
+const Card = ({ pelicula, genres }) => {
   return (
     <div style={styleCard}>
-      <h1>{pelicula.imdb_id}</h1>
-      <h2>{pelicula.title}</h2>      
-      {/* <img src={pelicula.Poster} alt={pelicula.Title}/>
+      <h1>{pelicula.original_title}</h1>
+      <div>
+        <p>{pelicula.original_language}</p>
+      </div>           
+       {/*<img src={pelicula.Poster} alt={pelicula.Title}/>
       <p>{pelicula.Plot}</p>
       <h5>{pelicula.Director}</h5>
       <h5>{pelicula.Genre}</h5>
       <h5>{pelicula.Actors}</h5> */}
       
 
-/* 
+ 
       {/* <button
         onClick={() => {
           favorito(pelicula.nombre);
@@ -30,7 +32,7 @@ const Card = ({ pelicula }) => {
       >
         Favorito
       </button> */}
-*/
+
     </div>
   );
 };
