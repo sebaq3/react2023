@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Card from './Card';
+import GeneralLayout from '../layouts/GeneralLayout';
 
 const Serie = () => {
   const [series, setSeries] = useState([]);
@@ -55,6 +56,7 @@ const Serie = () => {
 
   return (
     <div>
+      <GeneralLayout></GeneralLayout>
       <h1>Series</h1>
       {series.map((serie) => (
         <Card key={serie.id} serie={serie} genres={genres} />

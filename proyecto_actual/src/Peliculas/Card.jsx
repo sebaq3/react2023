@@ -1,39 +1,44 @@
+import './styles.css'; // Ruta al archivo CSS
+import Pelicula from "../Pelicula/Pelicula";
 import React from "react";
 
-const styleCard = {
-  display: "flex",
-  flexDirection: "row",
-  justifyContent: "center",
-  alignItems: "center",
-  border: "2px solid black",
-  borderRadius: "10px",
-  
-};
+
+
 
 const Card = ({ pelicula, genres }) => {
+
+
+
+
   return (
-    <div style={styleCard}>
-      <h1>{pelicula.original_title}</h1>
-      <div>
-        <p>{pelicula.original_language}</p>
-      </div>           
-       {/*<img src={pelicula.Poster} alt={pelicula.Title}/>
-      <p>{pelicula.Plot}</p>
-      <h5>{pelicula.Director}</h5>
-      <h5>{pelicula.Genre}</h5>
-      <h5>{pelicula.Actors}</h5> */}
-      
+    
+    <div className="card-container">
+      <div className="card" >
+        <h2>{pelicula.original_title}</h2>
+                 
+        <img src={`https://image.tmdb.org/t/p/w600_and_h900_bestv2/${pelicula.poster_path}`} alt={pelicula.original_title} />
+        
+        
 
- 
-      {/* <button
-        onClick={() => {
-          favorito(pelicula.nombre);
-        }}
-      >
-        Favorito
-      </button> */}
+        {/*<div>
+          <p>{pelicula.original_language}</p>
+        </div> 
+        <p>{pelicula.Plot}</p>
+        <h5>{pelicula.Director}</h5>
+        <h5>{pelicula.Genre}</h5>
+        <h5>{pelicula.Actors}</h5> */}
+          
+        {/* <button
+          onClick={() => {
+            favorito(pelicula.nombre);
+          }}
+        >
+          Favorito
+        </button> */}
 
+      </div>
     </div>
+    
   );
 };
 

@@ -1,8 +1,7 @@
 import React , { useState,useEffect } from "react";
-import json from "../assets/peliculas.json";
 import Card from "./Card";
 import GeneralLayout from "../layouts/GeneralLayout";
-
+import './styles.css'; // Ruta al archivo CSS
 
 
 /* https://rapidapi.com/SAdrian/api/moviesminidatabase */
@@ -27,7 +26,7 @@ export const Pelis = () => {
         data.genres.map((genre)=> {
           genreMap[genre.id] = genre.name;
           });
-          console.log(genreMap);
+          
         setGeneros(genreMap);   
       }catch (error){
         setError('Hubo un error');
@@ -42,7 +41,7 @@ export const Pelis = () => {
       try {
         const response = await fetch (`https://api.themoviedb.org/3/movie/popular?api_key=e978d37cf754ee2def0362a69807b215&page=${currentPage}`);
         const data = await response.json();
-        console.log(data);
+        
         setPeliculas(data.results);
         setTotalPages(data.total_pages);   
       }catch (error){
@@ -80,9 +79,11 @@ export const Pelis = () => {
     <div>
       <GeneralLayout></GeneralLayout>
       <h1>Peliculas Populares</h1>
+      <div className="card-container">
       {peliculas.map((pelicula) => {
         return <Card key={pelicula.id} pelicula={pelicula} genres={generos} />;
         })}
+        </div>
         <div>
         <button onClick={handlePrevPage} disabled={currentPage === 1}>
           Previous Page
