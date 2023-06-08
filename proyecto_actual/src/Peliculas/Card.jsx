@@ -2,36 +2,37 @@ import React from "react";
 
 const styleCard = {
   display: "flex",
-  flexDirection: "column",
+  flexDirection: "row",
   justifyContent: "center",
   alignItems: "center",
   border: "2px solid black",
   borderRadius: "10px",
-  width: "300px",
+  
 };
 
-const Card = ({ pelicula }) => {
+const Card = ({ pelicula, genres }) => {
   return (
     <div style={styleCard}>
-      <h1>{pelicula.nombre}</h1>
-      <h2>{pelicula.fecha}</h2>      
-      <img src={pelicula.link_portada}/>
-      <p>{pelicula.resumen}</p>
-      <h5>{pelicula.directores}</h5>
-      <h5>{pelicula.estudio}</h5>
-      <h5>{pelicula.genero}</h5>
-      <h5>{pelicula.reparto}</h5>
+      <h1>{pelicula.original_title}</h1>
+      <div>
+        <p>{pelicula.original_language}</p>
+      </div>           
+       {/*<img src={pelicula.Poster} alt={pelicula.Title}/>
+      <p>{pelicula.Plot}</p>
+      <h5>{pelicula.Director}</h5>
+      <h5>{pelicula.Genre}</h5>
+      <h5>{pelicula.Actors}</h5> */}
       
 
-/* 
-      <button
+ 
+      {/* <button
         onClick={() => {
-          deleteUser(user.id);
+          favorito(pelicula.nombre);
         }}
       >
-        Eliminar
-      </button>
-*/
+        Favorito
+      </button> */}
+
     </div>
   );
 };
