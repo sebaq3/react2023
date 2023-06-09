@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const styleCard = {
   display: "flex",
   flexDirection: "column",
@@ -8,23 +9,19 @@ const styleCard = {
   border: "2px solid black",
   borderRadius: "10px",
   width: "300px",
+  
 };
 
-const Card = ({ noticia }) => {
+
+const Card = ({ upcoming }) => {
   return (
     <div style={styleCard}>
-      <h1>{noticia.id}</h1>
-      <h2>{noticia.title}</h2>      
-      <p>{noticia.description}</p>
-      <h5>{noticia.date}</h5>
-      
-
-
-      <button onClick={() => {deleteUser(user.id);}} >
-        Eliminar
-      </button>
-
+      <h2>{upcoming.title}</h2>
+      <p>{upcoming.overview}</p>
+      <p>{upcoming.release_date}</p>
+      <button>watch trailer</button>
     </div>
+
   );
 };
 
