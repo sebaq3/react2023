@@ -1,9 +1,8 @@
 .navbar {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
-    height: 60px;
-    width: 100vw;
+
     background-color: #2e2e36;
     color: aliceblue;
     
