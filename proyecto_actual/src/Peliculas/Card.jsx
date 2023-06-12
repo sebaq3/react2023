@@ -1,5 +1,5 @@
 import './styles.css'; // Ruta al archivo CSS
-import Pelicula from "../Pelicula/Pelicula";
+
 import React from "react";
 
 

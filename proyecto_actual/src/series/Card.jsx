@@ -1,4 +1,5 @@
 import React from 'react'
+import '../Peliculas/styles.css'
 
 const styleCard = {
   display: 'flex',
@@ -10,14 +11,17 @@ const styleCard = {
 };
 
 const Card = ({ serie, genres }) => {
-  const { name, overview, genre_ids } = serie;
+  const { name, overview, genre_ids, poster_path } = serie;
   const showGenres = genre_ids.map((genreId) => genres[genreId]);
 
   return (
-    <div>
+    <div className="card-container">
+      <div className="card" >
       <h2>{name}</h2>
-      <p>{overview}</p>
+      
       <p>Genres: {showGenres.join(', ')}</p>
+      <img src={`https://image.tmdb.org/t/p/w600_and_h900_bestv2/${poster_path}`} alt={name} />
+    </div>
     </div>
   );
 };
